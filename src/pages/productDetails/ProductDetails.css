@@ -1,0 +1,112 @@
+.productDetail {
+  background-color: #fff;
+}
+.productDetail__top {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background: rgba(114, 186, 94, 0.05);
+}
+
+.productDetail__info {
+  background-color: #fff;
+  padding: 8px;
+  padding: 20px;
+}
+.productDetail__info__brand {
+  margin: 3% 0 0 0;
+  font-size: 15px;
+}
+.productDetail__info__div__price {
+  margin: 3% 0 0 0;
+  font-size: 20px;
+}
+.productDetail__info__price {
+  margin-left: 5px;
+}
+.productDetail__info__rating {
+  font-size: 18px;
+  margin: 3% 0 0 0;
+}
+.productDetail__info__ratingIcon {
+  color: darkorange;
+  font-size: 20px;
+}
+
+.productDetail__buyButton {
+  color: black;
+  box-shadow: 0px 1px 0px 0px rgb(77, 197, 197);
+  background: linear-gradient(
+    to bottom,
+    rgb(106, 204, 204) 20%,
+    rgb(10, 233, 233) 100%
+  );
+  background-color: rgb(106, 204, 204);
+  border-radius: 6px;
+  border: 1px solid rgb(25, 187, 187);
+  margin: 5% 0 0 0;
+  width: 100%;
+  transition: all 0.3s linear;
+  font-weight: 600;
+  outline: rgb(25, 187, 187);
+  cursor: pointer;
+  font-size: 15px;
+  padding: 10px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgb(106, 204, 204);
+}
+
+.productDetail__buyButton:hover {
+  background: linear-gradient(
+    to bottom,
+    rgb(10, 233, 233) 5%,
+    rgb(106, 204, 204) 100%
+  );
+  background-color: rgb(77, 197, 197);
+}
+
+.productDetail__buyButton:active {
+  transform: scale(0.9);
+}
+.productDetail__cartButton {
+  color: black;
+  box-shadow: 0px 1px 0px 0px rgb(77, 197, 197);
+  background: transparent;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid rgb(25, 187, 187);
+  margin: 3% 0 0 0;
+  width: 100%;
+  transition: all 0.3s linear;
+  font-weight: 600;
+  outline: rgb(25, 187, 187);
+  cursor: pointer;
+  font-size: 15px;
+  padding: 10px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgb(106, 204, 204);
+}
+.productDetail__cartButton:hover {
+  background: linear-gradient(
+    to bottom,
+    rgb(10, 233, 233) 5%,
+    rgb(106, 204, 204) 100%
+  );
+  background-color: rgb(77, 197, 197);
+}
+.productDetail__cartButton:active {
+  transform: scale(0.9);
+}
+.productDetail__info__bullets {
+  margin: 8% 0 0 3%;
+  line-height: 2em;
+}
+
+@media only screen and (max-width: 640px) {
+  .productDetail__top {
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed rgba(114, 186, 94, 0.35);
+    background: rgba(114, 186, 94, 0.05);
+  }
+}

@@ -1,0 +1,47 @@
+.home {
+  height: 90vh;
+  background-color: #2f2e41;
+}
+.home__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home__title {
+  display: table;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5vw;
+  line-height: 2em;
+  background-image: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.home__description {
+  text-align: center;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 3vw;
+  color: white;
+  margin-bottom: 10%;
+}
+
+@media screen and (max-width: 640px) {
+  .home__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home__title {
+    font-size: 8vw;
+  }
+
+  .home__description {
+    font-size: 5vw;
+  }
+}

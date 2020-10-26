@@ -1,0 +1,53 @@
+.imageSlider {
+  padding-right: 1em;
+}
+.carousel-root {
+  background-color: #fff;
+}
+.carousel .slide > img {
+  height: 400px;
+  object-fit: contain;
+  margin-top: 20px;
+}
+.carousel .thumb {
+  vertical-align: middle;
+  height: 70px;
+}
+.carousel > .thumb > img {
+  object-position: top;
+}
+.carousel .slide {
+  background: #fff;
+}
+.carousel .thumbs-wrapper {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+.carousel .control-dots .dot {
+  box-shadow: 1px 1px 2px rgb(168 135 52) !important;
+  background: rgb(77, 197, 197) !important;
+}
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:focus {
+  outline: none;
+}
+.carousel .carousel-status {
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 28%);
+  color: rgb(77, 197, 197);
+  margin: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+  .imageSlider {
+    padding-right: 0;
+  }
+  .carousel .slide > img {
+    height: 300px;
+    object-fit: contain;
+  }
+  .carousel .thumb {
+    vertical-align: middle;
+    height: 70px;
+  }
+}
